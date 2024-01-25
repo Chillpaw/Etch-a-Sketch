@@ -1,11 +1,16 @@
-
+console.log("Game initialised.");
 //first step - create the game board. 16 x 16 grid of square divs.
 let width = 16
 let height = 16
 
-for (let y = 0; y < height; y++) {
-    for (let x = 0; x < width; x++) {
+const gameContainer = document.getElementById("game-container");
 
+for (let y = 1; y < height; y++) {
+    for (let x = 1; x < width; x++) {
+        const dot = document.createElement("div");
+        dot.className = "game-dot";
+        gameContainer.append(dot);
+        console.log(`Dot ${x * y} created.`)
     }
 }
 

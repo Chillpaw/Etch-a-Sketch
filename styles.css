@@ -1,0 +1,19 @@
+* {
+    border: dotted red 2px
+}
+
+.game-dot {
+    width: 10px;
+    height: 10px;
+    background-color: darkgrey;
+    flex: 1;
+}
+
+.game-container {
+    background-color: azure;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+}
